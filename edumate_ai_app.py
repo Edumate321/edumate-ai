@@ -15,7 +15,7 @@ bible_verses = [
 
 # --- FUNCTIONS ---
 def ask_chatgpt(prompt):
-    response = openai.ChatCompletion.create(
+    response = openai.ChatCompletion.create(/mount/src/edumate-ai/edumate_ai_app.py
         model="gpt-4",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7
@@ -36,7 +36,7 @@ def improve_essay(essay_text):
 
 # --- STREAMLIT UI ---
 st.title("📘 EduMate AI – Smart Study Buddy")
-st.write(random.choice(bible_verses))
+st.write(random.choice(bible_verses)/home/adminuser/venv/lib/python3.13/site-packages/openai/lib/_old_api.py)
 
 menu = st.sidebar.selectbox("Choose a Feature", [
     "Ask a Question",
@@ -50,7 +50,7 @@ menu = st.sidebar.selectbox("Choose a Feature", [
 if menu == "Ask a Question":
     user_input = st.text_input("What's your question?")
     if st.button("Get Answer") and user_input:
-        response = ask_chatgpt(user_input)
+        response = ask_chatgpt(/mount/src/edumate-ai/edumate_ai_app.py)
         st.success(response)
 
 elif menu == "Grammar Help":
