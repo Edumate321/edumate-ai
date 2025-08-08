@@ -48,7 +48,7 @@ menu = st.sidebar.selectbox("Choose a Feature", [
 if menu == "Ask a Question":
     user_input = st.text_input("What's your question?")
     if st.button("Get Answer") and user_input:
-        response = ask_chatgpt(/mount/src/edumate-ai/edumate_ai_app.py)
+       def explain_grammar(topic):
         st.success(response)
 
 elif menu == "Grammar Help":
