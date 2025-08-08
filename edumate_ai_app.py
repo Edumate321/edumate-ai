@@ -3,8 +3,7 @@ import streamlit as st
 import random
 
 # --- CONFIGURE OPENAI ---
-openai.api_key = "YOUR_OPENAI_API_KEY"  # Replace with your real key
-
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 # --- BIBLE VERSES ---
 bible_verses = [
     "Proverbs 1:5 – Let the wise listen and add to their learning.",
