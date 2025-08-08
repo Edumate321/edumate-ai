@@ -15,7 +15,7 @@ bible_verses = [
 
 # --- FUNCTIONS ---
 def ask_chatgpt(prompt):
-    response = openai.ChatCompletion.create(/mount/src/edumate-ai/edumate_ai_app.py
+    response = openai.ChatCompletion.create(
         model="gpt-4",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7
