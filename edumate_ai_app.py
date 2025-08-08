@@ -35,8 +35,7 @@ def improve_essay(essay_text):
 
 # --- STREAMLIT UI ---
 st.title("📘 EduMate AI – Smart Study Buddy")
-st.write(random.choice(bible_verses)/home/adminuser/venv/lib/python3.13/site-packages/openai/lib/_old_api.py)
-
+# --- OPENAI FUNCTION ---
 menu = st.sidebar.selectbox("Choose a Feature", [
     "Ask a Question",
     "Grammar Help",
